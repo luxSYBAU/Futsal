@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futsal Passion ⚽</title>
+  <style>
+    /* --- Estilos base --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0099ff, #00cc88);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    /* --- Inicio --- */
+    #inicio {
+      background: url('https://lnfs.es/media/lnfs/img_news/panel/13503.jpg') no-repeat center center/cover;
+      color: white;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    #inicio h2 {
+      font-size: 3em;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- Historia --- */
+    #historia p {
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+
+    /* --- Reglas --- */
+    #reglas ul {
+      list-style: none;
+      max-width: 700px;
+      margin: 40px auto;
+      text-align: left;
+    }
+
+    #reglas li {
+      background: white;
+      margin: 10px 0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    #reglas li:hover {
+      transform: scale(1.03);
+    }
+
+    /* --- Galería --- */
+    #galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    #galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.4s;
+    }
+
+    #galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- Contacto --- */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button {
+      background: linear-gradient(90deg, #00cc88, #0099ff);
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #0099ff, #00cc88);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Futsal Passion ⚽</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Historia</a>
+      <a href="#reglas">Reglas</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido al mundo del Futsal</h2>
+    <p>Velocidad, técnica y trabajo en equipo dentro de la cancha.</p>
+  </section>
+
+  <section id="historia">
+    <h2>Historia del Futsal</h2>
+    <p>El futsal nació en Uruguay en 1930, cuando Juan Carlos Ceriani ideó una versión adaptada del fútbol para jugar en interiores. Con el tiempo, se expandió por Sudamérica y el mundo, convirtiéndose en una disciplina reconocida por la FIFA. Hoy, el futsal es sinónimo de técnica, táctica y pasión.</p>
+  </section>
+
+  <section id="reglas">
+    <h2>Reglas Básicas</h2>
+    <ul>
+      <li>Se juega con 5 jugadores por equipo, incluido el portero.</li>
+      <li>El balón es más pequeño y menos reboteante que el de fútbol tradicional.</li>
+      <li>Los partidos duran 40 minutos (dos tiempos de 20).</li>
+      <li>No se permite el juego brusco ni el contacto excesivo.</li>
+      <li>Los saques se realizan con el pie.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Galería de Futsal</h2>
+    <div id="galeria">
+      <img src="https://erbol.com.bo/sites/default/files/bol_futsal.jpg" alt="Partido de futsal">
+      <img src="https://i.ytimg.com/vi/_p8etVOreKk/maxresdefault.jpg" alt="Cancha de futsal">
+      <img src="https://fcf.com.co/wp-content/uploads/2025/03/54405799014_397b7e91df_c.jpg" alt="Jugador de futsal">
+      
+      
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres unirte a nuestra comunidad futsalera? Escríbenos:</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="4" placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Futsal Passion. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
